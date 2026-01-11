@@ -14,7 +14,10 @@ function App() {
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/">Octofit Tracker</Link>
+            <Link className="navbar-brand d-flex align-items-center" to="/">
+              <img src={process.env.PUBLIC_URL + '/octofitapp-small.png'} alt="Octofit Logo" className="App-logo" />
+              Octofit Tracker
+            </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
